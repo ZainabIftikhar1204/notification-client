@@ -79,7 +79,7 @@ const NotificationForm: React.FC<Props> = ({ onChange }) => {
               { id: 'rollno', display: 'rollno' },
               { id: 'name', display: 'name' },
             ]}
-            renderSuggestion={(suggestion, search, highlightedDisplay) => (
+            renderSuggestion={(_suggestion, _search, highlightedDisplay) => (
               <div className='custom-mention'>
                 {highlightedDisplay}
                 <style>
